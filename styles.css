@@ -1,0 +1,98 @@
+body {
+  background-color: rgb(241, 241, 167);
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-family: "Balsamiq Sans", cursive;
+}
+
+figure {
+  border: 8px groove lightblue;
+  margin: 50px 100px 50px 100px;
+  padding: 30px 30px 30px 30px;
+}
+
+.fg {
+  width: 300px;
+  border: 1px solid black;
+}
+.fg {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+figcaption {
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 0.8em;
+}
+
+.navv {
+  width: 200px;
+  margin-top: 20px;
+  padding: 5px;
+  border: 1px solid blue;
+}
+
+.container {
+  height: 1000px;
+  display: grid;
+  grid-gap: 3px;
+  /* grid-template-columns: repeat(12, 1fr); */
+  /* grid-template-columns: repeat(1fr, 1fr); */
+  /* grid-template-rows: 50px 50px 50px 100px; */
+  /* grid-template-rows: 50px 50px 50px 50px 50px; */
+
+  grid-template-areas:
+    "h h h h h h h h h h h h"
+    "n n n n n n n n n n n n"
+    "m m m m m m m m m m m m"
+    "f f f f f f f f f f f f";
+}
+
+.h {
+  grid-area: h;
+}
+.n {
+  grid-area: n;
+}
+.m {
+  grid-area: m;
+}
+.f {
+  grid-area: f;
+}
+
+@media (min-width: 768px) {
+  img {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1024px) {
+  img {
+    width: 50%;
+  }
+  p {
+    font-family: "Balsamiq Sans", cursive;
+  }
+}
+
+@media (min-width: 1280px) {
+  img {
+    width: 40%;
+  }
+}

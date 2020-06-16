@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Order Healty Cookies</title>
+  </head>
+  <body>
+    <header><h1>Hieronder kunt u gezonde koekjes bestellen!</h1></header>
+    <nav></nav>
+    <main>
+      <form name="contact" method="POST" data-netlify="true">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div>
+          <label for="color">Te bestellen kleur van de koekjes</label>
+          <input type="color" name="color" id="color" />
+        </div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+
+    <footer class="navv">
+      <a href="index.html">Terug naar hoofdpagina!</a>
+      <br /><br />
+      Bent u nog niet overtuigd?
+      <a target="_blank" href="https://www.tastykokos.nl/"
+        >Klik dan op deze link!</a
+      >
+    </footer>
+  </body>
+</html>
